@@ -1,0 +1,305 @@
+/*Always style for mobile first*/
+
+    body{
+        margin:0;
+        padding:0;
+        text-align:center;
+        width:100%;
+        font-family: "Arial";
+        font-size:14px;
+        color:#707070;  
+    }
+
+    header, nav{
+        background-color:#DFE2E2;   
+    }
+    
+    img{
+        max-width:100%; /*seemingly a very imortant setting or else images adjust outside there sepctrum*/
+    }
+    
+    .main-primary-heading{
+        padding-top:10px;
+    }
+
+    .main-secondary-heading{
+        border: black solid;
+        color: #fff;
+        background: black;
+        height:20px;
+        padding-top:5px;  
+    }
+
+    ul{
+        list-style-type: none;
+        text-align:center;
+        padding:0;
+        margin:0;
+    }
+
+    .navigation-block{
+        padding:10px;
+       
+    }
+
+    .navigation {
+        display:inline;
+        text-decoration:none;
+        color: #000;
+        padding:5 rem;
+    }
+
+    li > a{
+        list-style-type: none;
+        color:black;
+        text-decoration: none;
+        font-weight:bold;
+        word-spacing:5px;
+        padding:2px;
+    }
+
+    .context-headline-1 {
+        text-align:left;
+        padding-left:35px;
+        padding-right:25px;
+        padding-bottom:10px;
+        font-size:18px;
+    }
+
+    .content-area-4{
+        padding-top:20px;
+    
+    }
+
+        .headline-copy-2{
+            float: left;
+            width:300px;
+            padding-left:20px;
+            padding-right:20px;
+        }
+
+
+        .context-headline-2{
+            display:inline-block;
+            font-size:18px;
+            padding:30px;
+            text-align:left;
+        }
+
+    .context-headline-3{
+        display:inline-block;
+        font-size:18px;
+        padding:20px;
+        text-align:left;
+    }
+
+    .shop-link-1{
+        margin: 10px;
+        padding:8px;
+        width:300px;
+        height:50px;
+        background-color: #fff;
+        border: 1px solid #707070;
+        opacity: 1;
+        font-weight:bold;
+    }
+
+    .shop-link-2{
+        width:100%;
+        padding:10px;
+        height:50px;
+        margin-top:5px;
+        margin-bottom:2px;
+        background-color:#C6D6D6;
+        border: 1px solid #C6D6D6;
+        font-weight: bold;
+        
+    }
+
+    .social-media-icons{
+        padding-top:14px;
+        padding-bottom:12px;
+        border-bottom: 1px solid black;
+        word-spacing:2rem;
+    }
+
+    .footer-paragraph{
+        color:#707070;
+    }
+
+    .footer-sub-pragraph-1{
+        font-size:18px;
+        padding:10px;
+        line-height:30px;
+        word-spacing:2px;
+        color:#000;
+    }
+
+    .footer-branding-images{
+        padding-top:40px;
+    }
+
+    footer{
+        margin:15px;
+    }
+
+@media screen and (min-width:720px){
+    /*this grid should contain 2 columns and  how ever many rows the pics are broken into*/ 
+    
+    body{
+        color:#707070;
+    }
+
+    /*grid display*/
+
+    .grid-container{
+        display:grid;
+        width:600px;
+        text-align: center;
+        margin: auto; 
+        border:1px solid #C6D6D6;
+       
+    }
+
+    .content-area-1, .content-area-5{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        grid-template-rows: repeat (2, 1fr);
+        padding-bottom:5px;
+        
+    }
+
+        .fashion-image-left{
+            grid-column-start: 1; 
+            grid-column-end: 3; 
+            grid-row-start: 1; 
+            grid-row-end: 3;
+        }
+
+        .product-image-right-1{ 
+            grid-column-start: 3; 
+            grid-column-end: 4; 
+            grid-row-start: 1; 
+            grid-row-end: 3;
+        }
+
+        .product-image-right-2{
+            grid-column-start: 3; 
+            grid-column-end: 4; 
+            grid-row-start: 2; 
+            grid-row-end: 3;
+        }
+
+    .content-area-2{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap:5px;
+        grid-template-rows:repeat(1, 1fr);
+        padding-bottom:5px;
+    }
+        .context-headline-1{
+            grid-column-start:1;
+            grid-column-end:3;
+            grid-row-start:1;
+            grid-row-end:2;
+        }
+        .red-jumper{
+            grid-column-start:3;
+            grid-column-end:4;
+            grid-row-start:1;
+            grid-row-end:2; 
+        }
+
+    .content-area-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        grid-template-rows: repeat (2, 1fr);
+            
+    }
+    
+        .lady-in-cardigan{
+            grid-column-start: 2; 
+            grid-column-end: 4; 
+            grid-row-start: 1; 
+            grid-row-end: 3;
+        }
+    
+        .black-color-block{ 
+            grid-column-start: 1; 
+            grid-column-end: 2; 
+            grid-row-start: 1; 
+            grid-row-end: 3;
+        }
+    
+        .grey-cardigan{
+            grid-column-start: 1; 
+            grid-column-end: 2; 
+            grid-row-start: 2; 
+            grid-row-end: 3;
+        }
+
+    .content-area-4{
+        display:grid;
+        grid-template-columns: repeat(1fr 300px);
+        grid-gap: 5px;
+        grid-template-rows: repeat(1, 1fr);
+
+    }
+        .headline-copy-2{
+            grid-column-start: 1; 
+            grid-column-end: 2; 
+            grid-row-start: 1; 
+            grid-row-end: 2;
+            padding-top:45px;
+        }
+
+        .context-headline-2{
+            grid-column-start: 2; 
+            grid-column-end: 4; 
+            grid-row-start: 1; 
+            grid-row-end: 2;
+        }
+
+    .content-area-6{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap:5px;
+        grid-template-rows:repeat(2, 1fr);
+    }
+
+        .mocha-jumper{
+            grid-column-start:1;
+            grid-column-end:2;
+            grid-row-start:1;
+            grid-row-end:3;
+        }
+
+        .headline-copy-3{
+            grid-column-start:2;
+            grid-column-end:4;
+            grid-row-start:1;
+            grid-row-end:2; 
+        }
+        .context-headline-3{
+            grid-column-start:2;
+            grid-column-end:4;
+            grid-row-start:2;
+            grid-row-end:3; 
+            font-size:16px;
+        }
+   
+    .shop-link-2{
+        width:190px;
+        margin:2px;  
+        margin-top:30px;
+        margin-bottom:20px;      
+    }
+
+    .footer-sub-pragraph-1{
+        font-size:16px;
+    }
+}
+
+
